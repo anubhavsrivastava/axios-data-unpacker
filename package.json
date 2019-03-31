@@ -1,0 +1,28 @@
+{
+  "name": "axios-data-unpacker",
+  "version": "0.0.1",
+  "description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavsrivastava/axios-data-unpacker.git"
+  },
+  "keywords": [
+    "axios",
+    "middleware",
+    "axios-ecosystem",
+    "axios-middleware",
+    "axios-rest",
+    "axios-instance",
+    "axios-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anubhavsrivastava/axios-data-unpacker/issues"
+  },
+  "homepage": "https://github.com/anubhavsrivastava/axios-data-unpacker#readme"
+}
