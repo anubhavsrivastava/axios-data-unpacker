@@ -2,9 +2,15 @@
 
 Axios middleware that unpacks HTTP responses so that you can focus on actual response
 
+---
+
 ## Introduction
 
+---
+
 ## Install
+
+---
 
 ## Usage
 
@@ -16,6 +22,8 @@ Axios middleware that unpacks HTTP responses so that you can focus on actual res
 
 ### Advanced Usage
 
+---
+
 <!-- References
 https://laracasts.com/discuss/channels/servers/get-data-out-from-axios-javascript -->
 
@@ -26,5 +34,13 @@ Suggestions and PRs are welcome!
 Please read the [contribution guidelines](CONTRIBUTING.md) to get started.
 
 <!-- Change contributing.md -->
+
+---
+
+## License
+
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+
+refer `LICENSE` file in this repository.
 
 ---
