@@ -4,7 +4,10 @@
 	"description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage",
+		"coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
 	},
 	"repository": {
 		"type": "git",
