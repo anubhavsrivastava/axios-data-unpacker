@@ -9,6 +9,9 @@
 		"test:coverage": "jest --coverage",
 		"coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
 	},
+	"engines": {
+		"node": ">=8"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/anubhavsrivastava/axios-data-unpacker.git"
