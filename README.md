@@ -1,2 +1,3 @@
 # axios-data-unpacker
-Unpacks axios based HTTP responses so that you worry about important data only
+
+Axios middleware that unpacks HTTP responses so that you can focus on actual response
