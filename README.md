@@ -4,7 +4,13 @@ Axios middleware that unpacks HTTP responses so that you can focus on actual res
 
 ## Introduction
 
+## Install
+
 ## Usage
+
+### Node usage
+
+### Browser
 
 ## Contribution
 
