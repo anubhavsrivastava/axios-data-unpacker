@@ -33,5 +33,9 @@
 	"bugs": {
 		"url": "https://github.com/anubhavsrivastava/axios-data-unpacker/issues"
 	},
-	"homepage": "https://github.com/anubhavsrivastava/axios-data-unpacker#readme"
+	"homepage": "https://github.com/anubhavsrivastava/axios-data-unpacker#readme",
+	"devDependencies": {
+		"coveralls": "^3.0.3",
+		"jest": "^24.5.0"
+	}
 }
