@@ -2,8 +2,10 @@
 	"name": "axios-data-unpacker",
 	"version": "0.0.1",
 	"description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
+		"start": "webpack --watch",
+		"build": "webpack",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage",
@@ -44,6 +46,8 @@
 		"babel-preset-stage-2": "^6.24.1",
 		"babel-preset-stage-3": "^6.24.1",
 		"coveralls": "^3.0.3",
-		"jest": "^24.5.0"
+		"jest": "^24.5.0",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
 	}
 }
