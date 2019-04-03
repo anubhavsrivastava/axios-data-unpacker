@@ -82,11 +82,7 @@ The above consumption code changes with this module. The above code or all place
 
 ## Usage
 
-PS: This should be last interceptor to be added as response interceptor for your axios instance. This is important because any other response interceptor in may use values from complete axios response, like status or headers.
-
-### Node usage
-
-### Browser
+Important : This should be last interceptor to be added as response interceptor for your axios instance. This is important because any other response interceptor in may use values from complete axios response, like status or headers.
 
 ### Configuration
 
