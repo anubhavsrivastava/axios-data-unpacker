@@ -13,6 +13,8 @@ Axios middleware that unpacks HTTP responses so that you can focus on actual res
 
 ## Introduction
 
+Axios data unpacker is middleware for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response
+
 ---
 
 ## Install
