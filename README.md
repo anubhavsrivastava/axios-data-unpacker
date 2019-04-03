@@ -44,6 +44,14 @@ This would imply that application has to unpack `data` object at all places of c
         });
     }
 
+### Solution
+
+The above consumption code changes with this middleware. The above code or all places of consumption would change as below.
+
+    getUsers() {
+        return axios.get('/users');
+    }
+
 ---
 
 ## Install
