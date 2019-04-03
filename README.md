@@ -1,6 +1,6 @@
 # Axios Data Unpacker
 
-Axios middleware that unpacks HTTP responses so that you can focus on actual response
+Axios middleware/interceptor that unpacks HTTP responses so that you can focus on actual response
 
 [![Build Status](https://travis-ci.org/anubhavsrivastava/axios-data-unpacker.svg?branch=master)](https://travis-ci.org/anubhavsrivastava/axios-data-unpacker)
 [![Coverage Status](https://coveralls.io/repos/github/anubhavsrivastava/axios-data-unpacker/badge.svg?branch=master)](https://coveralls.io/github/anubhavsrivastava/axios-data-unpacker?branch=master)
@@ -29,7 +29,7 @@ Axios middleware that unpacks HTTP responses so that you can focus on actual res
 
 ## Introduction
 
-Axios data unpacker is middleware for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response.
+Axios data unpacker is interceptor for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response.
 
 ### The Problem
 
@@ -50,7 +50,7 @@ Any HTTP request using axios will return into following object that is available
 
         // `config` is the config that was provided to `axios` for the request
         config: {}
-        }
+    }
 
 This would imply that application has to unpack `data` object at all places of consumption something like,
 
@@ -60,9 +60,15 @@ This would imply that application has to unpack `data` object at all places of c
         });
     }
 
+or something like,
+
+    getUsers() {
+        return axios.get('/users').then(result => result.data);
+    }
+
 ### Solution
 
-The above consumption code changes with this middleware. The above code or all places of consumption would change as below.
+The above consumption code changes with this module. The above code or all places of consumption would change as below.
 
     getUsers() {
         return axios.get('/users');
@@ -75,6 +81,8 @@ The above consumption code changes with this middleware. The above code or all p
 ---
 
 ## Usage
+
+PS: This should be last interceptor to be added as response interceptor for your axios instance. This is important because any other response interceptor in may use values from complete axios response, like status or headers.
 
 ### Node usage
 
