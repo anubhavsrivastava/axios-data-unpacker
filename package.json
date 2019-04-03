@@ -1,6 +1,6 @@
 {
 	"name": "axios-data-unpacker",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
 	"main": "dist/index.js",
 	"scripts": {
