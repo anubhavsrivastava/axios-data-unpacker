@@ -1,5 +1,5 @@
 export default function responseDataUnpacker(axiosConfig) {
-	if (axiosConfig.config.unpackResponseData) {
+	if (!axiosConfig.config.packResponseData) {
 		axiosConfig = axiosConfig.data;
 	}
 

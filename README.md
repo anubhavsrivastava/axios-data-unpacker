@@ -71,8 +71,6 @@ The above consumption code changes with this module. The above code or all place
         return axios.get('/users');
     }
 
----
-
 ## Install
 
 ```
@@ -85,13 +83,13 @@ or
 yarn add axios-data-unpacker
 ```
 
----
-
 ## Usage
 
 Important : This should be last interceptor to be added as response interceptor for your axios instance. This is important because any other response interceptor in may use values from complete axios response, like status or headers.
 
 ### Configuration
+
+One can disable this intercpetor by passing `packResponseData` as configuration in axios instance or per axios api call.
 
 ---
 
