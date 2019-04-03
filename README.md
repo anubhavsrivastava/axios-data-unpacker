@@ -13,7 +13,36 @@ Axios middleware that unpacks HTTP responses so that you can focus on actual res
 
 ## Introduction
 
-Axios data unpacker is middleware for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response
+Axios data unpacker is middleware for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response.
+
+### The Problem
+
+Any HTTP request using axios will return into following object that is available to callee function,
+
+    {
+        // `data` is the response that was provided by the server
+        data: {},
+
+        // `status` is the HTTP status code from the server response
+        status: 200,
+
+        // `statusText` is the HTTP status message from the server response
+        statusText: 'OK',
+
+        // `headers` the headers that the server responded with
+        headers: {},
+
+        // `config` is the config that was provided to `axios` for the request
+        config: {}
+        }
+
+This would imply that application has to unpack `data` object at all places of consumption something like,
+
+    getUsers() {
+        return axios.get('/users').then( function (result) {
+            return result.data;
+        });
+    }
 
 ---
 
