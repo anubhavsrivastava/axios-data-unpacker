@@ -16,10 +16,7 @@ Axios middleware/interceptor that unpacks HTTP responses so that you can focus o
     -   [Solution](#solution)
 -   [Install](#install)
 -   [Usage](#usage)
-    -   [Node usage](#node-usage)
-    -   [Browser](#browser)
     -   [Configuration](#configuration)
-    -   [Advanced Usage](#advanced-usage)
 -   [Contribution](#contribution)
 -   [License](#license)
 
