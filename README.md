@@ -6,6 +6,7 @@ Axios middleware/interceptor that unpacks HTTP responses so that you can focus o
 [![Coverage Status](https://coveralls.io/repos/github/anubhavsrivastava/axios-data-unpacker/badge.svg?branch=master)](https://coveralls.io/github/anubhavsrivastava/axios-data-unpacker?branch=master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub issues](https://img.shields.io/github/issues/anubhavsrivastava/axios-data-unpacker.svg?style=flat-square)](https://github.com/anubhavsrivastava/axios-data-unpacker/issues)
+[![HitCount](http://hits.dwyl.io/anubhavsrivastava/axios-data-unpacker.svg)](http://hits.dwyl.io/anubhavsrivastava/axios-data-unpacker)
 
 [![NPM](https://nodei.co/npm/axios-data-unpacker.png?downloads=true&stars=true)](https://nodei.co/npm/axios-data-unpacker/)
 
