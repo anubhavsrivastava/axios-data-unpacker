@@ -1,54 +1,54 @@
 {
-	"name": "axios-data-unpacker",
-	"version": "0.0.2",
-	"description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
-	"main": "dist/index.js",
-	"scripts": {
-		"start": "webpack --watch",
-		"build": "webpack",
-		"test": "jest",
-		"test:watch": "jest --watch",
-		"test:coverage": "jest --coverage",
-		"coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
-	},
-	"engines": {
-		"node": ">=8"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/anubhavsrivastava/axios-data-unpacker.git"
-	},
-	"keywords": [
-		"axios",
-		"middleware",
-		"axios-ecosystem",
-		"axios-middleware",
-		"axios-rest",
-		"axios-instance",
-		"axios-plugin"
-	],
-	"author": {
-		"name": "Anubhav Srivastava",
-		"email": "anubhav.srivastava00@gmail.com"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/anubhavsrivastava/axios-data-unpacker/issues"
-	},
-	"homepage": "https://github.com/anubhavsrivastava/axios-data-unpacker#readme",
-	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-core": "^6.26.3",
-		"babel-loader": "^7.0.0",
-		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-preset-env": "^1.7.0",
-		"babel-preset-stage-0": "^6.24.1",
-		"babel-preset-stage-1": "^6.24.1",
-		"babel-preset-stage-2": "^6.24.1",
-		"babel-preset-stage-3": "^6.24.1",
-		"coveralls": "^3.0.3",
-		"jest": "^24.5.0",
-		"webpack": "^4.29.6",
-		"webpack-cli": "^3.3.0"
-	}
+  "name": "axios-data-unpacker",
+  "version": "0.0.2",
+  "description": "Axios middleware that unpacks HTTP responses so that you can focus on actual response",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavsrivastava/axios-data-unpacker.git"
+  },
+  "keywords": [
+    "axios",
+    "middleware",
+    "axios-ecosystem",
+    "axios-middleware",
+    "axios-rest",
+    "axios-instance",
+    "axios-plugin"
+  ],
+  "author": {
+    "name": "Anubhav Srivastava",
+    "email": "anubhav.srivastava00@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anubhavsrivastava/axios-data-unpacker/issues"
+  },
+  "homepage": "https://github.com/anubhavsrivastava/axios-data-unpacker#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@babel/preset-stage-1": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/preset-stage-3": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "coveralls": "^3.0.3",
+    "jest": "^24.7.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
