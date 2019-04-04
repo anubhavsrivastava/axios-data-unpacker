@@ -45,6 +45,7 @@
     "@babel/preset-stage-1": "^7.0.0",
     "@babel/preset-stage-2": "^7.0.0",
     "@babel/preset-stage-3": "^7.0.0",
+    "@babel/runtime": "^7.4.3",
     "babel-loader": "^8.0.5",
     "coveralls": "^3.0.3",
     "jest": "^24.7.1",
