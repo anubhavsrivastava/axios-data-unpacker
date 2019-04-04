@@ -5,3 +5,7 @@ export default function responseDataUnpacker(axiosConfig) {
 
 	return axiosConfig;
 }
+
+export function axiosResponseDataUnpacker(axios) {
+	axios.interceptors.response.use(responseDataUnpacker);
+}
