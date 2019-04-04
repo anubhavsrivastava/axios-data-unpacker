@@ -113,7 +113,27 @@ Important : This should be last interceptor to be added as response interceptor 
 
 ### Configuration
 
-One can disable this intercpetor by passing `packResponseData` as configuration in axios instance or per axios api call.
+One can disable this interceptor by passing `packResponseData` as configuration in axios instance or per axios api call. This configuration can also be set on `axios.default` object.
+
+| Setting Name     | type      | description                    | default value |
+| ---------------- | --------- | ------------------------------ | ------------- |
+| packResponseData | `Boolean` | Flag to disable data unpacking | `false`       |
+
+1. To disable unpacking for specific call (in case API layer needs to work with header, status, config from standard axios reponse)
+
+
+        axios.get('/users', { packResponseData;:true } ).then(response=>{
+            //response is standard axios response with config, header, status, data, statusText
+            response.header('csrf') // sample usage of non-data fields
+        })
+
+    This config as parameter is available for all calls(get, post, put, etc) in axios, refer [here](https://www.npmjs.com/package/axios#request-method-aliases).
+
+2.  To disable interceptor for all calls
+
+        const instance = axios.create({packResponseData: true});
+        ... //other chain of interceptors and config
+        instance.interceptors.response.use(axiosDataUnpacker);
 
 ---
 
