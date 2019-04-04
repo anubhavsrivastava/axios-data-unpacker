@@ -87,12 +87,29 @@ yarn add axios-data-unpacker
 
 Important : This should be last interceptor to be added as response interceptor for your axios instance. This is important because any other response interceptor in chain may use values from complete axios response, like `status` or `headers`.
 
-1. At instance level
+-   Simple usage
 
-    import axiosDataUnpacker from 'axios-data-unpacker';
-    const instance = axios.create();
-    ... //other chain of interceptors and config
-    instance.interceptors.response.use(axiosDataUnpacker);
+        import axios from 'axios';
+        import {axiosResponseDataUnpacker} from 'axios-data-unpacker';
+
+        // after adding other response interceptors
+        axiosResponseDataUnpacker(axios)
+
+    `axiosResponseDataUnpacker` function also accepts instance of axios as its parameter.
+
+-   Default Instance
+
+        import axios from 'axios';
+        import axiosDataUnpacker from 'axios-data-unpacker';
+        ... //other chain of interceptors and config
+        axios.interceptors.response.use(axiosDataUnpacker);
+
+-   At instance level
+
+        import axiosDataUnpacker from 'axios-data-unpacker';
+        const instance = axios.create();
+        ... //other chain of interceptors and config
+        instance.interceptors.response.use(axiosDataUnpacker);
 
 ### Configuration
 
