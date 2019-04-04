@@ -26,7 +26,7 @@ Axios middleware/interceptor that unpacks HTTP responses so that you can focus o
 
 ## Introduction
 
-Axios data unpacker is interceptor for axios that unpacks `data` from axios standard response and makes API response content to called so that one can focus on actual response.
+Axios data unpacker is interceptor for axios that unpacks `data` from axios standard response and makes API response content to be called so that one can focus on actual response.
 
 ### The Problem
 
@@ -119,7 +119,7 @@ One can disable this interceptor by passing `packResponseData` as configuration 
 | ---------------- | --------- | ------------------------------ | ------------- |
 | packResponseData | `Boolean` | Flag to disable data unpacking | `false`       |
 
-1. To disable unpacking for specific call (in case API layer needs to work with header, status, config from standard axios reponse)
+1. To disable unpacking for specific call (in case API layer needs to work with header, status, config from standard axios response)
 
 
         axios.get('/users', { packResponseData;:true } ).then(response=>{
