@@ -130,7 +130,7 @@ One can disable this interceptor by passing `packResponseData` as configuration 
 
     This config as parameter is available for all calls(get, post, put, etc) in axios, refer [here](https://www.npmjs.com/package/axios#request-method-aliases).
 
-2.  To disable interceptor for all calls
+2.  To disable interceptor for all calls of a instance (if already configured as interceptor in axios default configuration)
 
         const instance = axios.create({packResponseData: true});
         ... //other chain of interceptors and config
